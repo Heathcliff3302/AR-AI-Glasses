@@ -1,0 +1,39 @@
+# ---- 密钥和本地配置 ----
+# config.ini 里可能有 API token，绝对不能提交。
+# 这条是本文件里最重要的一行。
+config.ini
+*.local.ini
+.env
+
+# ---- 构建产物 ----
+build/
+out/
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+compile_commands.json
+*.o
+*.a
+*.so
+*.so.*
+
+# ---- 模型文件(几百 MB，不该进 git) ----
+*.bin
+models/
+
+# ---- 运行时产生的东西 ----
+capture_dir/
+*.log
+*.wav
+*.jpg
+*.jpeg
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+.cache/
+*.swp
+*~
+.DS_Store
